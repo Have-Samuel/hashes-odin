@@ -24,3 +24,26 @@ p arr
 
 # merge method is non-destructive, it does not change the original hash
 # merge! method is destructive, it changes the original hash
+
+# Using some of Ruby's built-in Hash methods, write a program that loops through a hash and prints all of the keys. Then write a program that does the same thing except printing the values. Finally, write a program that prints both.
+
+name_and_age = { "Steve" => 31, "Joe" => 19, "Bob" => 42 }
+# Single line of code
+name_and_age.each_key { |k| puts k }
+name_and_age.each_value { |v| puts v }
+# Multiple Lines of code
+keys = name_and_age.each_key do |k|
+    puts k
+end
+
+values = name_and_age.each_value do |v|
+    puts v
+end
+
+# Single line of code
+name_and_age.each { |k, v| puts k, v }
+
+# Keys and values all together in one array
+both = name_and_age.each do |k, v|
+    puts k, v
+end
