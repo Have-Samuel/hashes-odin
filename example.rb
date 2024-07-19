@@ -49,4 +49,6 @@ japan = {
     honda: 'Accord',
     nissan: 'Altima'
 }
+# This will bring you an error
+# puts {9: 'eight'} # SyntaxError: unexpected ':', expecting end-of-input
 
