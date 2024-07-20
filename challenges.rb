@@ -65,3 +65,38 @@ person = {name: 'Bob', occupation: 'web developer', hobbies: 'painting'}
 my_name_is = person[:name]
 puts my_name_is
 
+
+animals = {
+    dog: "bark",
+    pig: "oink",
+    horse: "neigh",
+    cow: "moo",
+    squirrel: "chirp",
+    aligator: "growl",
+    bear: "roar",
+    snake: "hiss",
+    cat: "meow",
+    bird: "chirp",
+    mouse: "squeak"
+}
+
+# output = animals.include?(:dog)
+# ans = animals.include?(:lion)
+# del = animals.include?(:dog)
+# find = animals.has_value?("oink")
+# deli = animals.has_value?("chirp")
+spec = animals.has_key?(:dog)
+# val = animals.include?('shark')
+show = animals.value?(:cow)
+# pol = animals.has_value?(:cow)
+lop = animals.include?(:cow)
+# puts pol
+puts lop
+# puts ans
+# puts del
+# puts output
+# puts find
+# puts deli
+puts spec
+# puts val
+puts show
