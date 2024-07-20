@@ -53,3 +53,15 @@ opposites = {positive: "negative", up: "down", right: "left"}
 opposites.each_key { |key| puts key }
 opposites.each_value { |value| puts value }
 opposites.each { |key, value| puts "The opposite of #{key} is #{value}" }
+
+
+person = {name: 'Bob', occupation: 'web developer', hobbies: 'painting'}
+
+# my_name_is = person.name:
+# This will bring an error
+# why? Because the key is a symbol, not a string 
+
+# We try this instead
+my_name_is = person[:name]
+puts my_name_is
+
